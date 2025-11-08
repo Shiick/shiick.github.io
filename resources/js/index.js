@@ -7,7 +7,8 @@ function importHTML(){
         console.log(component);
         const response = await fetch(component);
         const content = await response.text();
-        imp.insertAdjacentText('beforeend', content);
+        imp.insertAdjacentHTML('beforeend', content);
+        imp.removeAttribute("data-import");
     });
 }
 
