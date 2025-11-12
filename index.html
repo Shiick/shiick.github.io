@@ -2,15 +2,18 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
-        <h1 class="text-3xl font-bold underline">
-          Hello world!
+        <h1 class="text-3xl font-bold underline text-center">
+            Hello world!
         </h1>
-        <div data-import="test.html"></div>
-        <div data-import="test2.html"></div>
+        <div class="flex flex-row gap-2 justify-center mt-2">
+            <div s-import="link.html" s-url="https://kingdomarchives.com/" s-link="Kingdom Archives" s-icon="fa-solid fa-book"></div>
+            <div s-import="link.html" s-url="https://twitter.com/Shiick" s-link="My Twitter" s-icon="fa-brands fa-twitter"></div>
+        </div>
         <script type="text/javascript" src="resources/js/index.js"></script>
     </body>
 </html>
